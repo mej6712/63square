@@ -1,0 +1,130 @@
+/*webfonts*/
+
+@font-face {
+    font-family: 'S-CoreDream-8Heavy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*custom*/
+
+.all_box{
+    position: relative;
+    width: calc(100%/3);
+    height: 100vh;
+    float: left;
+    cursor: pointer;
+    background-size: cover;
+}
+
+.link_box .all_box:first-child{
+    background-image: url(../images/back_1.png);
+}
+.all_box:nth-child(2){
+    background-image: url(../images/back_2.png);
+}
+.all_box:last-child{
+    background-image: url(../images/back_3.png);
+}
+
+.chapter_content{
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    color: white;
+}
+
+.chapter_title{
+    font-family: 'S-CoreDream-8Heavy';
+    font-size: 40px;
+}
+
+.chapter_title::after{
+    content: "";
+    display: block;
+    width: 60%;
+    height: 2px;
+    margin: 15px 0;
+    background-color: white;
+}
+
+.chapter_txt{
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    transform: skew(0.03deg);
+}
+
+.chapter_arrow{
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/arrow.png);
+    background-size: cover;
+    bottom: 50px;
+    right: 20px;
+    z-index: 10;
+}
+
+@media screen and (max-width:1024px){
+    .chapter_title{
+        font-size: 30px;
+    }
+    
+    .chapter_txt{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .all_box{
+        width: 100%;
+        height: calc(100vh/3);
+        float: none;
+    }
+    
+    .chapter_arrow{
+        bottom: 40px;
+    }
+    
+    .chapter_title{
+        font-size: 35px;
+    }
+    
+    .chapter_txt{
+        font-size: 20px;
+    }
+    
+    .all_box:first-child{
+        background-position: 0 20%;
+    }
+    
+    .all_box:nth-child(2){
+        background-position: 0 40%;
+    }
+    
+    .all_box:last-child{
+        background-position: 0 50%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .chapter_content{
+        bottom: 60px;
+    }
+    .chapter_title{
+        font-size: 25px;
+    }
+    
+    .chapter_txt{
+        font-size: 16px;
+    }
+}

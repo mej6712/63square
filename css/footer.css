@@ -1,0 +1,91 @@
+#footer {
+    margin-top: 100px;
+    padding: 30px 0;
+    background-color: #333333;
+    color: white;
+}
+
+.sitemap {
+    float: left;
+    cursor: pointer;
+}
+
+.sitemap_txt {
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.footer_company_info_inner{
+    margin-top: 50px;
+}
+
+.company_info_box{
+    width: 45%;
+    float: left;
+}
+
+.company_call_box{
+    width: 45%;
+    float: right;
+}
+
+.footer_sub_info_inner{
+    margin-top: 50px;
+}
+
+.footer_copyright{
+    width: 45%;
+    float: left;
+}
+
+.footer_sns{
+    width: 45%;
+    float: right;
+}
+
+.company_address_txt,
+.company_call_txt,
+.copyright_txt{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.sns_fb,
+.sns_tw{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    float: left;
+    cursor: pointer;
+}
+
+.sns_fb{
+    background-image: url(../images/facebook.png);
+}
+
+.sns_tw{
+    margin-left: 20px;
+    background-image: url(../images/twitter.png);
+}
+
+@media screen and (max-width:768px){
+    .sitemap{
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width:480px){
+    .company_info_box,
+    .company_call_box{
+        width: 100%;
+        float: none;
+    }
+    
+    .company_call_box{
+        margin-top: 20px;
+    }
+    
+    .copyright_txt{
+        font-size: 12px;
+    }
+}
